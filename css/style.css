@@ -1,0 +1,120 @@
+
+body {
+	background: url(../img/background.jpg);
+}
+p {
+	color: #fff; 
+}
+nav {
+	height: 80px;
+	padding-top: 15px;
+	margin-top: 25px;
+	overflow: visible;
+    background: -webkit-linear-gradient(to bottom, #c91a1a, #9b0303);
+    background: -o-linear-gradient(to bottom, #c91a1a, #9b0303);
+    background: linear-gradient(to bottom, #c91a1a, #9b0303);
+}
+nav > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav > ul > li {
+	background-image: url(../img/line.png);
+	background-repeat: no-repeat;
+	background-position: top left; 
+	float: left;
+	height: 50px;
+	position: relative;
+	flex-basis: auto;
+ 	flex-grow: 1;
+ 	text-align: center;	
+ 	overflow: visible;
+}
+nav > ul > li:before {
+	content: "";  
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	-webkit-transition: all 1s ease-out 0.5s;
+    -moz-transition: all 1s ease-out 0.5s;
+    -o-transition: all 1s ease-out 0.5s;
+    transition: all 1s ease-out 0.5s;
+}
+nav > ul > li:hover:before,
+nav > ul > li:focus:before {
+	vertical-align: top;
+}
+nav > ul > li:hover a:after,
+nav > ul > li:focus a:after{
+	content: url(../img/zerkalo.png);
+	margin-top: 20px;
+	right: 50%;
+	display: inline-block;
+	position: absolute;
+	margin-right: -15px;
+}
+
+nav > ul > li:hover:after,
+nav > ul > li:focus:after {
+	content: "";
+	border: 23px solid transparent;
+	border-top: 9px solid #9b0303;
+	top: 128%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	display: block;
+	position: absolute;
+	overflow: visible;
+	margin-left: -20px;
+}
+
+nav > ul > li:first-child {
+	background-image: none;
+	margin-left: 0px; 
+}
+nav > ul > li:last-child {
+	margin-right: 16px; 
+}
+
+nav > ul > li > a {
+	display: inline-block;
+	color: #fff;
+}
+nav > ul > li > a:focus,
+nav > ul > li > a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+.inline {
+	display: inline-block;
+}
+.adr {
+	font-size: 12px;
+	margin-top: 3%;
+}
+.container-fluid {
+	padding-left: 15%;
+	padding-right: 15%; 
+}
+
+
+#head {
+	padding-top: 3%;
+}
+#tel {
+	vertical-align: top;
+	font-size: 18px;
+}
+#podpis {
+	font-size: 10px;
+	color: #ceead1;
+	margin-top: -5%;
+}
